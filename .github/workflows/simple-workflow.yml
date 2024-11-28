@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: Display 1st msg
         run: echo "Récupération du code source"
-      
+        
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        
       - name: Display 2nd msg
         run: echo "Vérification terminé"
-        
